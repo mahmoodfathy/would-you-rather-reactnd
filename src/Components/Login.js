@@ -19,6 +19,7 @@ const Login = (props) => {
   const [selectedName, setSelectedName] = useState("");
   const [selectedNameId, setSelectedNameId] = useState("");
   const { users } = props;
+  const disabled = selectedName === "" ? true : false;
   const handleChoices = (e) => {
     setSelectedName(e.target.value);
 
@@ -72,6 +73,7 @@ const Login = (props) => {
               variant="outlined"
               color="primary"
               onClick={() => handleClick(selectedNameId)}
+              disabled={disabled}
             >
               Login
             </Button>

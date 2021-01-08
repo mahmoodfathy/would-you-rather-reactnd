@@ -4,9 +4,17 @@ import { saveAnswerToQuestion } from "../Actions/questions";
 import UserCard from "./UserCard";
 
 import NavBar from "./NavBar";
+import { Redirect } from "react-router-dom";
 
 const QuestionPoll = ({ authUser, question, author }) => {
   const text = "Submit";
+  let invalidPath = false;
+  if (question === undefined) {
+    invalidPath = true;
+  }
+  if (invalidPath) {
+    return <Redirect to="/questions/not_found" />;
+  }
   return (
     <>
       <NavBar />

@@ -24,7 +24,7 @@ function App({ handleInitialData, authUser }) {
           <div>
             <Switch>
               <Route exact path="/" component={Dashboard} />
-              <Route exact path="/questions/not_found" component={NotFound} />
+              <Route path="/questions/not_found" component={NotFound} />
               <Route exact path="/add" component={NewPoll} />
               <Route exact path="/questions/:id" component={QuestionPoll} />
               <Route exact path="/leaderboard" component={LeaderBoard} />

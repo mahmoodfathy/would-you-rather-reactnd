@@ -1,12 +1,29 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Typography, Card } from "@material-ui/core";
+import { NotInterested } from "@material-ui/icons";
 
 const NotFound = () => {
   return (
     <>
-      <Typography style={{ margin: "auto" }} variant="h1">
-        Error 404 Not Found!
-      </Typography>
+      <Card
+        raised
+        style={{
+          width: "200px",
+          height: "200px",
+          margin: "auto",
+          marginTop: "200px",
+        }}
+      >
+        <Typography
+          style={{ textAlign: "Center", marginTop: "75px" }}
+          variant="h6"
+        >
+          Error 404 Not Found!
+        </Typography>
+        <NotInterested
+          style={{ color: "red", fontSize: 70, marginLeft: "50px" }}
+        ></NotInterested>
+      </Card>
     </>
   );
 };
