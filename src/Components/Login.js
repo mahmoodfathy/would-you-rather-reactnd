@@ -39,7 +39,7 @@ const Login = (props) => {
           style={{ textAlign: "center" }}
         />
         <CardMedia>
-          <img src="people.jpg" style={{ width: "500px" }} />
+          <img src="people.jpg" alt="Avatar" style={{ width: "500px" }} />
         </CardMedia>
         <CardActions>
           <FormControl>
